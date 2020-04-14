@@ -1,6 +1,10 @@
 require_relative 'Post.rb'
 
-post = Post.new("cat", "no body here")
+def generate_post(title, body)
+	return Post.new(title, body)
+end
+
+post = generate_post("cat", "no body here")
 
 post.add_tag("#cat")
 post.add_tag("#noBody")
